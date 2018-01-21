@@ -1,3 +1,7 @@
-li a{
-    color:green,
+li{
+    color:#008000;
+}
+
+body{
+    background-image: url("images/background.png");
 }
