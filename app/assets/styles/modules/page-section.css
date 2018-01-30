@@ -1,0 +1,14 @@
+.page-section{
+    padding: 3 rem 0;
+}
+@media screen and (min-width:800 px){
+    .page-section{
+        padding: 4.5rem 0;
+    }
+}
+
+
+.page-section--blue{
+    background-color: blue;
+    color: #FFF;
+}
