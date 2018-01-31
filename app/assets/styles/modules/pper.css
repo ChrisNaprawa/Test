@@ -1,11 +1,16 @@
 .pper{
+    overflow: hidden;
     padding-left: 18px;
-    padding-right:18px;
+    padding-right: 18px;
     max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.pper--no-padding-until{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .pper--medium{
     max-width: 976px;
 }
@@ -17,4 +22,9 @@
     .pper--b-margin{
         margin-bottom: 3.875rem;
     }
+    .pper--no-padding-until{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
 }

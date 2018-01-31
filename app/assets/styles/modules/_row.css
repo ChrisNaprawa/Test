@@ -20,6 +20,23 @@
 .row__b-margin-until-medium{
     margin-bottom: 0;
 }
+.row__6{
+    float: left;
+    width: 50%;
+}
+.row--equal-height{
+    display: flex;
+}
+.row--equal-height>div{
+    float: none;
+    display: flex;
+}
+.row--gutters-small{
+    margin-right: -45px;
+}
+.row--gutters-small>div{
+    padding-right: 45px;
+}
 }
 
 .row::after{
@@ -40,5 +57,18 @@
 .row__b-margin-until-medium{
     margin-bottom: 1rem;
 }
+
+.row--gutters-large{
+    margin-right: -100px;
+}
+
+.row--gutters-large>div{
+    padding-right: 100px;
+}
+
+.row--t-padding{
+    padding-top: 60px;
+}
+
 
 
