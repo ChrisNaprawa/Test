@@ -1,0 +1,66 @@
+
+
+
+
+<script>
+    function save()
+    {
+        alert('JFJFJF');
+        var text_to_save=document.getElementById('textfield').value;
+        alert(text_to_save);
+        localStorage.setItem("text", text_to_save); // save the item
+        var text=localStorage["text"];
+        alert(text);
+    }
+    function retrieve()
+    {
+        var text=localStorage.getItem("text"); // retrieve
+        document.getElementById('textDiv').innerHTML = text; // display
+        alert('FJFJFJ');
+    }
+    </script>
+<script>
+    function ss()
+    {
+        alert('KFKKFKF')
+    }
+</script>
+
+<div>
+    <h1>Test</h1>
+    <b>Name:</b><input type="text" id="textfield" /> 
+    <table><tr><td id="Save" onclick="save()">click</td></tr></table>
+    <button oclick="retrieve()">Retrieve</button>
+    
+</div>
+
+<script>
+
+        function fun()
+         {
+          alert("hello");
+          //validation code to see State field is mandatory.  
+         }   
+ 
+         function f1()
+         {
+            alert("f1 called");
+            //form validation that recalls the page showing with supplied inputs.   
+            fun (); 
+         }
+ 
+       </script>
+       </head>
+       <body>
+        <form name="form1" id="form1" method="post">
+ 
+          State: <select id="state ID">
+                    <option></option>
+                    <option value="ap">ap</option>
+                    <option value="bp">bp</option>
+                 </select>
+        </form>
+        <table><tr><td id="Save" onclick="f1()">click</td></tr></table>
+ 
+       </body>
+ </html>
