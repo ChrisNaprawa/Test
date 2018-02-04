@@ -1,18 +1,26 @@
 .large-hero {
     border-bottom: 10px;
     position: relative;
+    border-color: $mainBlue;
 
 }
 .large-hero__image{
     display: block;
 }
 .large-hero__text-content{
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+@media screen and(min-width){
+    .large-hero__text-content{
+        padding-top: 60px;
+    }
 }
 .large-hero__title {
     font-weight: 300;
