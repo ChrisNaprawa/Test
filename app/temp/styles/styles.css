@@ -993,22 +993,28 @@ a{
     position: absolute;
     z-index: 2;
     width: 100%;
+    -webkit-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+
+.site-header--is-expanded{
+    background-color: rgba(47,85,114, 0.55);
 }
 
 @media screen and (min-width: 800px){
     .site-header{
-        background-color: rgba(#2f5572,.3);
+        background-color: rgba(47,85,114, 0.3);
     }
 }
 
 .site-header__btn--container{
-    float: right;
 }
 
 .site-header__logo{
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 10;
     -webkit-transform: translateX(-50%) scale(0.8);
             transform: translateX(-50%) scale(0.8);
     -webkit-transform-origin: 50% 0;
@@ -1030,36 +1036,134 @@ a{
 }
 
 .site-header__menu-content{
-    display: none;
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 100px;
+    text-align: center;
 }
 
 @media screen and (min-width: 800px){
     .site-header__menu-content{
-        display: block;
+        opacity: 1;
+        padding-top: 0;
+        z-index: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
 .site-header__menu-icon{
     width: 20px;
-    height: 20px;
-    background-color: #FFF;
+    height: 19px;
     position: absolute;
     top: 10px;
     right: 10px;
+    Z-index: 10;
+}
+
+.site-header__menu-icon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.site-header__menu-icon__middle{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.site-header__menu-icon::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.site-header__menu-icon--close-x::before{
+    -webkit-transform: rotate(45deg) scaleX(1.25);
+            transform: rotate(45deg) scaleX(1.25);
+}
+
+.site-header__menu-icon--close-x::after{
+    -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle{
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
 }
 
 @media screen and (min-width: 800px){
     .site-header__menu-icon{
         display: none;
+        padding-top: 0;
+    }
+    .site-header__btn--container{
+        float: right;
     }
 }
 
-.primary-nav{
+.site-header__menu-content--is-visible{
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
 
+.primary-nav{
+    padding-top: 10px;
 }
 
 .primary-nav--pull-right{
-    float: right;
+}
+
+@media screen and (min-width: 800px){
+    .primary-nav{
+        padding-top: 0px;
+    }
+    .primary-nav--pull-right{
+        float: right;
+    }
+    .primary-nav li{
+        float: left;
+        display: block;
+        padding-right: 20px;
+    }
+    .primary-nav li:last-child{
+        padding-right: 20px;
+    }
 }
 
 .primary-nav ul{
@@ -1069,8 +1173,12 @@ a{
 
 .primary-nav li{
     list-style: none;
-    float: left;
-    padding-right: 20px;
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.primary-nav li:last-child{
+    padding-right: 0;
 }
 
 .primary-nav a{
@@ -1078,5 +1186,15 @@ a{
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 12px 0;
+    padding: 5 px 8 px;
+    font-size: .8rem;
+    background-color: rgba(47,85,114,.5);
+}
+
+@media screen and (min-width: 800px){
+    .primary-nav a{
+        padding: 12 px 0;
+        font-size: 1rem;
+        background-color: transparent;
+    }
 }
