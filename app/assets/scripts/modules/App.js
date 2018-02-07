@@ -1,0 +1,8 @@
+
+import Mobilemenu from "./Mobilemenu";
+import RevealOnScroll from "./RevealOnScroll";
+import $ from "jquery";
+
+var mobilemenu=new Mobilemenu();
+var reveal=new RevealOnScroll($(".feature-item"),"85%");
+var reveall=new RevealOnScroll($(".testimonial"),"60%");
