@@ -18,6 +18,11 @@
     margin-left: auto;
     margin-bottom: .6rem;
 }
+
+.section-title--less-margin{
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+}
 @media screen and (min-width: 530 px){
     .section-title__icon{
     margin-right: .5rem;

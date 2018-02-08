@@ -15,6 +15,10 @@
     max-width: 976px;
 }
 
+.pper--narrow{
+    max-width: 470 px;
+}
+
 .pper--b-margin{
     margin-bottom: 1.1rem;
 }
