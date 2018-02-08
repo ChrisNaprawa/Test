@@ -455,7 +455,7 @@ textarea {
 
 .large-hero__title {
     font-weight: 300;
-    color: #f81515;
+    color: #2f5572;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -474,7 +474,7 @@ textarea {
 
 .large-hero__subtitle{
     font-weight: 300;
-    color: #f81515;
+    color: #2f5572;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -1003,8 +1003,13 @@ a{
 
 @media screen and (min-width: 800px){
     .site-header{
+        position: fixed;
         background-color: rgba(47,85,114, 0.3);
     }
+}
+
+.site-header--dark{
+    background-color: rgba(23, 51, 72, 0.85);
 }
 
 .site-header__btn--container{
@@ -1017,10 +1022,20 @@ a{
     z-index: 10;
     -webkit-transform: translateX(-50%) scale(0.8);
             transform: translateX(-50%) scale(0.8);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     background-color: #2f5572;
     padding: 25px 36px;
+}
+
+.site-header--dark .site-header__logo{
+    -webkit-transform: scale(0.38);
+            transform: scale(0.38);
+
 }
 
 @media screen and (min-width: 800px){
@@ -1189,6 +1204,10 @@ a{
     padding: 5 px 8 px;
     font-size: .8rem;
     background-color: rgba(47,85,114,.5);
+}
+
+.primary-nav a.is-current-link{
+    color: orange;
 }
 
 @media screen and (min-width: 800px){

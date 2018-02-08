@@ -47,6 +47,10 @@
     background-color: rgba($mainBlue,.5);
 }
 
+.primary-nav a.is-current-link{
+    color: orange;
+}
+
 @media screen and (min-width: 800px){
     .primary-nav a{
         padding: 12 px 0;

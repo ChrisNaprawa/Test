@@ -24,7 +24,7 @@
 }
 .large-hero__title {
     font-weight: 300;
-    color: #f81515;
+    color: $mainBlue;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -41,7 +41,7 @@
 
 .large-hero__subtitle{
     font-weight: 300;
-    color: #f81515;
+    color: $mainBlue;
     font-size: 1.1rem;
     margin: 0;
 }
