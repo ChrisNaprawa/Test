@@ -531,6 +531,14 @@ a{
     color: #d59541;
 }
 
+.flexbox .example-element{
+    padding: 10px;
+}
+
+.cssanimations .some-other-element{
+    margin: 10px;
+}
+
 .btn{
     background-color: #2f5572;
     color: #FFF;
@@ -703,12 +711,12 @@ a{
     float: left;
     width: 50%;
 }
-.row--equal-height{
+.flexbox .row--equal-height{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.row--equal-height>div{
+.flexbox .row--equal-height>div{
     float: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -902,6 +910,10 @@ a{
 
 .icon{
             background-image: url('/assets/images/sprites/svg/sprite-69f19c2e.svg');
+       }
+
+.no-svg .icon{
+           background-image: url('/assets/images/sprites/svg/sprite-69f19c2e.svg')
        }
 
 .icon--clear-view-escapes{

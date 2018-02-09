@@ -1,6 +1,9 @@
        .icon{
             background-image: url('/assets/images/sprites/svg/sprite-69f19c2e.svg');
        }
+       .no-svg .icon{
+           background-image: url('/assets/images/sprites/svg/sprite-69f19c2e.svg')
+       }
     .icon--clear-view-escapes{
         width: 142.4px;
         height: 59.53px;

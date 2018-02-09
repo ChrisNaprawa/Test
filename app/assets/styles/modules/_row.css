@@ -24,10 +24,10 @@
     float: left;
     width: 50%;
 }
-.row--equal-height{
+.flexbox .row--equal-height{
     display: flex;
 }
-.row--equal-height>div{
+.flexbox .row--equal-height>div{
     float: none;
     display: flex;
 }
