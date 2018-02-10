@@ -3,7 +3,7 @@
     font-size: 1.9rem;
     color: $mainBlue;
 }
-@media screen and (min-width:800 px){
+@media screen and (min-width:800px){
     .headline{
         font-size:3rem;
     }
@@ -20,7 +20,7 @@
 .headline--small{
     font-size: 1.1rem;
 }
-@media screen and (min-width:800 px){
+@media screen and (min-width:800px){
     .headline--small{
         font-size: 1.875rem;
     }
