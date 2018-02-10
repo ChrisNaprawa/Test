@@ -2,9 +2,9 @@
     position: relative;
     padding-bottom: 2.5rem;
 }
-@media screen and (min-width: 530 px){
+@media screen and (min-width: 530px){
     .feature-item{
-        padding-left: 94 px;
+        padding-left: 94px;
     }
     .feature-item__title{
         text-align: left;

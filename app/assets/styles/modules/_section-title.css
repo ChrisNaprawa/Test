@@ -3,7 +3,7 @@
     font-weight: 300;
     text-align: center;
 }
-@media screen and (min-width: 530 px){
+@media screen and (min-width: 530px){
     .section-title{
         font-size: 3.75rem;
     }
@@ -23,7 +23,7 @@
     margin-bottom: 1.3rem;
     margin-top: 0;
 }
-@media screen and (min-width: 530 px){
+@media screen and (min-width: 530px){
     .section-title__icon{
     margin-right: .5rem;
     margin-left: 0;
