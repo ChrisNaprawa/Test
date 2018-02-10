@@ -1,0 +1,37 @@
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+@media screen and (min-width: 530 px){
+    .section-title{
+        font-size: 3.75rem;
+    }
+}
+.section-title strong{
+    font-weight: 500;
+}
+
+.section-title__icon{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: .6rem;
+}
+
+.section-title--less-margin{
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+}
+@media screen and (min-width: 530 px){
+    .section-title__icon{
+    margin-right: .5rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+}
+
+.section-title--blue{
+    color: $mainBlue;
+}

@@ -1,0 +1,29 @@
+.flexbox .example-element{
+    padding: 10px;
+}
+
+.cssanimations .some-other-element{
+    margin: 10px;
+}
+
+.btn{
+    background-color: #2f5572;
+    color: #FFF;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+}
+
+.btn--orange{
+    background-color: $mainOrange;
+}
+
+.btn--large{
+    font-size: 1.3rem;
+    padding: 1.1rem 1.9rem;
+}
+@media screen and (min-width:530 px){
+    .btn--large{
+        font-size: 1.3rem;
+    }
+}

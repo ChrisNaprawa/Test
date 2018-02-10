@@ -1,0 +1,72 @@
+
+
+
+
+<script>
+    function save()
+    {
+        alert('JFJFJF')
+        var text_to_save=document.getElementById('textfield').value;
+        alert(text_to_save);
+        var d=document.getElementById("inn");
+        d.value=text_to_save
+        localStorage.setItem("text", text_to_save); // save the item
+    };
+    function retrieve()
+    {
+        var text=localStorage.getItem("text"); // retrieve
+        document.getElementById('textDiv').innerHTML = text; // display
+        alert('FJFJFJ');
+    };
+
+    function s()
+    {
+        alert("ffff")
+    };
+    </script>
+<script>
+    function ss()
+    {
+        alert('KFKKFKF')
+    }
+</script>
+
+<div>
+    <h1>Test</h1>
+    <b>Name:</b><input type="text" id="textfield" /> 
+    <input type="text" id="inn" readonly="readonly" />
+    <div id="test"></div>
+    <table><button id="F" onclick="save()">f</button></table>
+    
+</div>
+
+<script>
+
+        function fun()
+         {
+          alert("hello");
+          //validation code to see State field is mandatory.  
+         }   
+ 
+         function f1()
+         {
+            alert("f1 called");
+            //form validation that recalls the page showing with supplied inputs.   
+            fun (); 
+         }
+ 
+       </script>
+       </head>
+       <body>
+        <form name="form1" id="form1" method="post">
+ 
+          State: <select id="state ID">
+                    <option></option>
+                    <option value="ap">ap</option>
+                    <option value="bp">bp</option>
+                 </select>
+        </form>
+        <table><tr><td id="Save" onclick="f1()">click</td></tr></table>
+ 
+       </body>
+ </html>
