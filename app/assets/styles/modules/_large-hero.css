@@ -27,15 +27,11 @@
     color: $mainBlue;
     font-size: 1.1rem;
     margin: 0;
-}
 @media screen and (min-width:530 px){
-    .large-hero__title{
-        font-size: 1.9rem;
+    font-size: 1.9rem;
     }
-}
 @media screen and (min-width:800 px){
-    .large-hero__title{
-        font-size: 3.1rem;
+    font-size: 3.1rem;
     }
 }
 
