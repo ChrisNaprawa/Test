@@ -455,26 +455,26 @@ textarea {
 
 .large-hero__title {
     font-weight: 300;
-    color: mainBlue;
+    color: #2f5572;
     font-size: 1.1rem;
     margin: 0;
 }
 
 @media screen and (min-width:530 px){
-        .large-hero__title{
-            font-size: 1.9rem;
-        }
+    .large-hero__title{
+    font-size: 1.9rem;
     }
+}
 
 @media screen and (min-width:800 px){
-        .large-hero__title{
-            font-size: 3.1rem;
-        }
+    .large-hero__title{
+    font-size: 3.1rem;
     }
+}
 
 .large-hero__subtitle{
     font-weight: 300;
-    color: mainBlue;
+    color: #2f5572;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -486,7 +486,7 @@ textarea {
 }
 
 @media screen and (min-width:800 px){
-    .large-hero__title{
+    .large-hero__subtitle{
         font-size: 5.1rem;
     }
 }
