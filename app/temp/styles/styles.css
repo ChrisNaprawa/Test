@@ -455,7 +455,7 @@ textarea {
 
 .large-hero__title {
     font-weight: 300;
-    color: #2f5572;
+    color: mainBlue;
     font-size: 1.1rem;
     margin: 0;
 }
@@ -474,7 +474,7 @@ textarea {
 
 .large-hero__subtitle{
     font-weight: 300;
-    color: #2f5572;
+    color: mainBlue;
     font-size: 1.1rem;
     margin: 0;
 }
